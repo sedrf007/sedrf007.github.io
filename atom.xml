@@ -4,7 +4,7 @@
   <title><![CDATA[KEN'S BLOG]]></title>
   <link href="http://sedrf007.github.io/atom.xml" rel="self"/>
   <link href="http://sedrf007.github.io/"/>
-  <updated>2015-11-20T15:10:23+08:00</updated>
+  <updated>2015-11-20T16:58:15+08:00</updated>
   <id>http://sedrf007.github.io/</id>
   <author>
     <name><![CDATA[Ji Chenjie]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CommentSystem]]></title>
+    <link href="http://sedrf007.github.io/blog/2015/11/20/commentsystem/"/>
+    <updated>2015-11-20T15:48:46+08:00</updated>
+    <id>http://sedrf007.github.io/blog/2015/11/20/commentsystem</id>
+    <content type="html"><![CDATA[<h1>在我的Octopress中插入评论插件的方法</h1>
+
+<h2>使用多说插件</h2>
+
+<blockquote><p>在国内，Octopress的discuss系统使用非常不方便，所以我用了一个国内的评论插件，多说</p></blockquote>
+
+<ul>
+<li>在多说官网注册，成为开发者，并获得二级域名</li>
+<li>在开发者平台获得源码</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!-- 多说评论框 start --&gt;
+</span><span class='line'>  &lt;div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"&gt;&lt;/div&gt;
+</span><span class='line'>&lt;!-- 多说评论框 end --&gt;
+</span><span class='line'>&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;
+</span><span class='line'>&lt;script type="text/javascript"&gt;
+</span><span class='line'>var duoshuoQuery = {short_name:"sedrf007"};
+</span><span class='line'>  (function() {
+</span><span class='line'>      var ds = document.createElement('script');
+</span><span class='line'>      ds.type = 'text/javascript';ds.async = true;
+</span><span class='line'>      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+</span><span class='line'>      ds.charset = 'UTF-8';
+</span><span class='line'>      (document.getElementsByTagName('head')[0] 
+</span><span class='line'>       || document.getElementsByTagName('body')[0]).appendChild(ds);
+</span><span class='line'>  })();
+</span><span class='line'>  &lt;/script&gt;
+</span><span class='line'>&lt;!-- 多说公共JS代码 end --&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<blockquote><p>data-thread-key中填写 <code>site.id</code></p>
+
+<p>data-title 中填写 <code>site.title</code></p>
+
+<p>data-url  中填写 <code>你网站部署的网址</code></p>
+
+<p>shortname 中在你成为开发者后会自动填写你申请的二级域名</p></blockquote>
+
+<ul>
+<li>在Octopress的源代码中，我们将上述的代码放到一个.html文件，存储到 /source/_includes/post中</li>
+<li>在_config.yml这个主配置文件中放入一个开关<strong>duoshuo_comment: true</strong></li>
+<li><p>并在layout中的post.html的主框架文件中修改以下部分，将新的评论网页元素代替自带的discuss插件</p>
+
+<blockquote><p>在id为disqus_thread的div中</p></blockquote></li>
+<li><p>rake generate后，评论系统就可以正常使用了</p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>

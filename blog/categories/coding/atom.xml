@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | KEN'S BLOG]]></title>
-  <link href="http://sedrf007.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Coding | KEN'S BLOG]]></title>
+  <link href="http://sedrf007.github.io/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://sedrf007.github.io/"/>
   <updated>2015-11-20T16:58:15+08:00</updated>
   <id>http://sedrf007.github.io/</id>
@@ -78,38 +78,6 @@ var duoshuoQuery = {short_name:"sedrf007"};
 <li><p>rake generate后，评论系统就可以正常使用了</p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress]]></title>
-    <link href="http://sedrf007.github.io/blog/2015/11/20/octopress/"/>
-    <updated>2015-11-20T09:51:24+08:00</updated>
-    <id>http://sedrf007.github.io/blog/2015/11/20/octopress</id>
-    <content type="html"><![CDATA[<h1>This is my first article,Welcome to my blog</h1>
-
-<h2>Using Octopress is very easy</h2>
-
-<p><strong>Here is the basic material you need to establish a blog by Octopress</strong></p>
-
-<ul>
-<li>built on a linux system ,i am using CentOs 6.7
-
-<ul>
-<li>you can download my install exe file on <a href="http://www.jikexueyuan.com">极客学院</a></li>
-<li>then follow the video to build up your developing enviroment step by step</li>
-</ul>
-</li>
-</ul>
-
-
-<p><img src="http://easyread.ph.126.net/TbaT-rzGtBvH7hYKGCRIgg==/7916653044779011552.jpg" alt="image" /></p>
-
-<pre><code>$id=jcj123;
-public function print(){
-echo $id;
-}
-</code></pre>
 ]]></content>
   </entry>
   
