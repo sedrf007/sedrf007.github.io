@@ -4,7 +4,7 @@
   <title><![CDATA[KEN'S BLOG]]></title>
   <link href="http://sedrf007.github.io/atom.xml" rel="self"/>
   <link href="http://sedrf007.github.io/"/>
-  <updated>2015-11-20T16:58:15+08:00</updated>
+  <updated>2015-11-30T14:38:07+08:00</updated>
   <id>http://sedrf007.github.io/</id>
   <author>
     <name><![CDATA[Ji Chenjie]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Tutorial]]></title>
+    <link href="http://sedrf007.github.io/blog/2015/11/30/octopress-tutorial/"/>
+    <updated>2015-11-30T00:00:00+08:00</updated>
+    <id>http://sedrf007.github.io/blog/2015/11/30/octopress-tutorial</id>
+    <content type="html"><![CDATA[<h1>this is about the basic using of octopress</h1>
+
+<h2>here is the command lines which is used most</h2>
+
+<ol>
+<li>rake new_post[&lsquo;postname&rsquo;],<strong>新建一篇文章</strong></li>
+<li>rake new_page[&lsquo;pagename&rsquo;],<strong>新建一个页面</strong></li>
+<li>rake generate,    <strong>命令生成，即在public目录中显示</strong></li>
+<li>rake deploy，     <strong>将变化部署到github的网站上</strong></li>
+<li>rake preview,     <strong>在本地的4000端口上预览</strong></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CommentSystem]]></title>
