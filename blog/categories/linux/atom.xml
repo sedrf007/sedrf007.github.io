@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | KEN'S BLOG]]></title>
+  <link href="http://sedrf007.github.io/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://sedrf007.github.io/"/>
+  <updated>2015-12-03T10:38:11+08:00</updated>
+  <id>http://sedrf007.github.io/</id>
+  <author>
+    <name><![CDATA[Ji Chenjie]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Linux_command]]></title>
+    <link href="http://sedrf007.github.io/blog/2015/12/03/linux-command/"/>
+    <updated>2015-12-03T10:13:49+08:00</updated>
+    <id>http://sedrf007.github.io/blog/2015/12/03/linux-command</id>
+    <content type="html"><![CDATA[<h1>this is about the basic command line used most in a linux system</h1>
+
+<ol>
+<li><strong>cd..</strong>返回上级目录</li>
+<li><strong>rm -r</strong>递归删除</li>
+<li><strong>top</strong>查看进程情况,<strong>z</strong>查看变化情况，<strong>q</strong>退出</li>
+<li><strong>ps aux</strong>查看进程情况</li>
+<li><strong>管道作用“|”</strong>将左边的输出结果作为右边的输入，比如<strong>ps aux | grep ssh</strong>查看ssh进程的情况</li>
+<li><strong>ifconfig</strong> 当前的网络情况</li>
+<li><strong>systemctl restart network</strong> 系统控制重启网络</li>
+<li>vi模式中，一下Insert进入编辑模式，再摁下Insert进入替代模式</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
